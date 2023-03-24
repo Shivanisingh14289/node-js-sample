@@ -24,5 +24,7 @@ jobs:
 
     - name: Build
       run: |
-        bower install
+        npm install -g bower
+        bower install --allow-root
+        bower update
         gulp
